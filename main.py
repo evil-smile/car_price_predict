@@ -1,14 +1,14 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
+
 
 
 
 def fonction_principal():
 
     # importation du modele
-    df_load = joblib.load(filename='modele_1.pkl')
+    df_load = pd.read_pickle('modele_1.pkl')
 
     # message d'acceuil
     st.title("BIENVENUE DANS MON APPLICATION DE PREDICTION DU PRIX DES VOITURES")
